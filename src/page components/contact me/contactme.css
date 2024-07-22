@@ -1,0 +1,69 @@
+.contactme{
+}
+
+.contactme-heading{
+    position: relative;
+    margin-top: 5%;
+}
+
+.contactme-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+    width: 40%;
+    padding-top: 2%;
+}
+
+.input1{
+    height: 15%;
+    border-radius: 6px;
+    border: none;
+    padding-left: 20px;
+    font-size: 13px;
+    font-family: "Inter";
+}
+
+.input2{
+    height: 85%;
+    border-radius: 6px;
+    border: none;
+    padding-left: 20px;
+    font-size: 13px;
+    font-family: "Inter";
+    padding-top: 10px;
+}
+
+.input2::placeholder{
+    padding-top: -40px;
+}
+
+.contactme-main a{
+    text-decoration: none;
+    color: rgb(186, 186, 186);
+}
+
+.contactme-main span:hover{
+    cursor: pointer;
+    color: rgba(129, 129, 129, 0.566);
+}
+
+.contactme-main p{
+    font-size: 14px;
+}
+
+.contactme button{
+    position: relative;
+    font-weight: 600;
+    right: 17%
+}

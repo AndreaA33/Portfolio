@@ -1,0 +1,42 @@
+.skills{
+    padding-top: 3%;
+}
+.skills-heading{
+    position: relative;
+    top: 5%;
+    margin-bottom: 5%;
+}
+
+.skills-main{
+    position: relative;
+    display: flex;
+    width: 70%;
+    left: 15%;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    height: 30%;
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(39, 39, 39);   
+    width: fit-content;
+    color: white ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.skill p{
+    padding-left: 4px;
+}
+
+.skill img{
+    position: relative;
+    width: 50px;
+}

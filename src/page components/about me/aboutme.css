@@ -1,0 +1,33 @@
+.aboutme{
+}
+
+.aboutme-main{
+    display: flex;
+    color: white;
+    left: 10%;
+}
+
+.aboutme-main-p{
+    width: 40%;
+    margin-left: 15%;
+    height: 200px;
+    font-size: 20px;
+    padding-right: 15%;
+    text-align: start;
+}
+
+.aboutme-pfp{
+    height: 300px;
+}
+
+.aboutme-heading{
+    position: relative;
+    top: 10%;
+    margin-bottom: 5%;
+}
+
+.resume{
+    position: relative;
+    font-weight: 600;
+    right: 31.5%;
+}

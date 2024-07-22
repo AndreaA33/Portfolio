@@ -1,31 +1,85 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: "Inter";
+}
+
+
+:root{
+    --secondary-glow: conic-gradient(
+      from 10deg at 50% 50%,
+      #309fce 0deg,
+      #2743f5 55deg,
+      #97b5da 120deg,
+      #0099ca 160deg,
+      transparent 360deg
+    );
+  
+    --third-glow: conic-gradient(
+      from 90deg at 50% 50%,
+      #7e45e8 0deg,
+      #3034a4 160deg,
+      #002966 120deg,
+      #8bdce0 55deg,
+      transparent 360deg
+    );
+  }
+  
+
 .App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 455vh;
+}
+
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+#heading {
+  color: white;
+  width: auto;
+  text-align: start;
+  font-weight: 600;
+  font-size: 34px;
+  display: inline-block;
+  position: relative;
+}
+
+#heading::after {
+  content: '';
+  display: block;
+  width: 50px; 
+  height: 2px;
+  background-color: #1f7ed2;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#main-button{
+  width: auto;
+  height: 50px;
+  background-color: #1f7ed2;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#main-button:hover{
+  background-color: #5c7c98b1;
+  cursor: pointer;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
