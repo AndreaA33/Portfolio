@@ -3,7 +3,7 @@ import "./projects.css"
 import project1img from "../../assets/guitartunerimg.png"
 import project2img from "../../assets/STmanageappimg.png"
 import project3img from "../../assets/BMHimg.png"
-import { useEffect } from 'react'
+import { useEffect } from 'react';
 
 function ProjectsComp() {
 
@@ -19,6 +19,7 @@ function ProjectsComp() {
         document.removeEventListener('ToProjects', ToProjects);
     };
   },[])
+
 
   return (
     <div className='projects' id="projects">

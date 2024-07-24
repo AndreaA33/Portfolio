@@ -1,18 +1,19 @@
 .main{
     color: white;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
 }
 
 .main-links{
     display: flex;
-    flex-direction: column;
     position: relative;
-    left: 2%;
+    left: 10%;
     align-items: center;
-    width: 30px;
     row-gap: 5px;
-    bottom: 5%;
+    bottom: 20%;
+    width: fit-content;
+    gap: 20px;
 }
+
 
 .main-dots{
     height: 40px;
@@ -112,3 +113,43 @@ body::after {
   animation: animateAfter 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
 }
 
+.mouse {
+	width: 20px;
+	height: 50px;
+	border: 3px solid #ffffff;
+	border-radius: 60px;
+    left: 49%;
+	position: relative;
+	&::before {
+		content: '';
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #ffffff;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+}
+
+.mouse:hover {
+    cursor: pointer;
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 40px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 20px;
+	}
+}

@@ -1,22 +1,13 @@
 import React from 'react'
 import "./navbar.css"
 import "@fontsource/inter";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 function NavbarComp() {
 
   const [isEvent, setEvent] = useState(0)
 
-  useEffect(() => {
-    if (isEvent === true) {
-        const eventsSection = document.getElementById('events');
-        if (eventsSection) {
-            eventsSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-  }, [isEvent]);
-
-  function handleToAboutme() {
+function handleToAboutme() {
     const event = new CustomEvent('ToAboutMe');
     setEvent(1)
     document.dispatchEvent(event);
@@ -45,6 +36,15 @@ function handleToSkills() {
   setEvent(3)
   document.dispatchEvent(event);
 }
+
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('event1');
+  if (window.scrollY > 200 && navbar != null) {
+      navbar.classList.add('selected-button');
+  } else if (navbar != null){
+      navbar.classList.remove('selected-button');
+  }
+});
 
   return (
     <div className='navbar' id='navbar'>

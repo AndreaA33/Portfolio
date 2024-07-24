@@ -1,10 +1,12 @@
 import React from 'react'
 import "./main.css"
-import linkedin from "../../assets/linkedin.svg"
-import github from "../../assets/github.png"
-import dots from "../../assets/dots.png"
+import linkedin from "../../assets/icons8-linkedin (2).svg"
+import github from "../../assets/icons8-github (1).svg"
 import "@fontsource/inter";
 import { useEffect } from 'react';
+import { IoMdDownload } from "react-icons/io";
+import scrollanimation from "../../assets/scrollanimation.json"
+import { Player } from 'lottie-react';
 
 function MainComp() {
 
@@ -21,17 +23,30 @@ function MainComp() {
     };
   },[])
 
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = `${process.env.PUBLIC_URL}/Andrea Anikwe Resume.pdf`;
+    link.download = 'Andrea Anikwe Resume.pdf';
+    link.click();
+  };
+
+  function handleToAboutme() {
+    const event = new CustomEvent('ToAboutMe');
+    document.dispatchEvent(event);
+  }
+
+
   return (
     <div className='main' id='home'>
       <div className='main-heading'>
-        <h1><span style={{ color: '#19568c', fontSize: 40, WebkitTextStroke: 0.2, WebkitTextStrokeColor: "white"}}>Hi!, I am </span><br/> Andrea Anikwe <br/><span style={{ color: '#19568c', fontSize: 40, WebkitTextStroke: 0.2, WebkitTextStrokeColor: "white"}}> Student | Software engineer </span></h1>
+        <h1><span style={{ color: '#1f7ed2', fontSize: 40, WebkitTextStroke: 0.5, WebkitTextStrokeColor: "black"}}>Hi!, I am </span><br/> Andrea Anikwe <br/><span style={{ color: '#1f7ed2', fontSize: 40, WebkitTextStroke: 0.5, WebkitTextStrokeColor: "black"}}> Student | Software engineer </span></h1>
       </div>
       <div className='main-links'>
-        <img src={dots} alt='dots' className='main-dots'/>
+        <button id='main-button'>RESUME<IoMdDownload style={{fontSize: 20}} onClick={downloadResume}/></button>
         <a href={"https://www.linkedin.com/in/andrea-anikwe/"}><img src={linkedin} alt='linkedin' className='main-link'/></a>
         <a href={"https://github.com/AndreaA33"}><img src={github} alt='github' className='main-link'/></a>
-        <img src={dots} alt='dots' className='main-dots'/>
       </div>
+      <div class="mouse" onClick={handleToAboutme}/>
     </div>
   )
 }
