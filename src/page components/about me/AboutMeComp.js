@@ -35,7 +35,7 @@ function AboutMeComp() {
         <br />Highly motivated student with a strong academic background and a passion for technology. Skilled in programming languages such as Python, Javascript, HTML, CSS with a solid understanding of data structures and algorithms.</p>
         <img className='aboutme-pfp' src={PFP}/>
       </div>
-      <button className='resume' id='main-button'>RESUME <IoMdDownload style={{fontSize: 20}} onClick={downloadResume}/></button>
+      <a href = {`${process.env.PUBLIC_URL}/Andrea Anikwe Resume.pdf`} download = 'Andrea Anikwe Resume.pdf' id='main-button'>RESUME<IoMdDownload style={{fontSize: 20}}/></a>
     </div>
   )
 }
