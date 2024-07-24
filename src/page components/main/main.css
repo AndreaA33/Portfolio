@@ -44,10 +44,6 @@
     column-gap: 0cap;
 }
 
-.main-heading span{
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-}
 
 body::before,
 body::after {
