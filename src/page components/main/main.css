@@ -1,6 +1,6 @@
 .main{
     color: white;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
 }
 
 .main-links{
@@ -9,9 +9,10 @@
     left: 10%;
     align-items: center;
     row-gap: 5px;
-    bottom: 20%;
+    bottom: 17%;
     width: fit-content;
     gap: 20px;
+    margin-top: 10px;
 }
 
 
@@ -33,7 +34,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 25%;
+    top: 30%;
     left: 10%;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -119,6 +120,7 @@ body::after {
 	border: 3px solid #ffffff;
 	border-radius: 60px;
     left: 49%;
+    top: 10%;
 	position: relative;
 	&::before {
 		content: '';

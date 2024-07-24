@@ -39,7 +39,7 @@ function MainComp() {
   return (
     <div className='main' id='home'>
       <div className='main-heading'>
-        <h1><span style={{ color: '#1f7ed2', fontSize: 40, WebkitTextStroke: 0.5, WebkitTextStrokeColor: "black"}}>Hi!, I am </span><br/> Andrea Anikwe <br/><span style={{ color: '#1f7ed2', fontSize: 40, WebkitTextStroke: 0.5, WebkitTextStrokeColor: "black"}}> Student | Software engineer </span></h1>
+        <h2><span style={{ color: '#1f7ed2', fontSize: 40, WebkitTextStroke: 0.5, WebkitTextStrokeColor: "black"}}>Hi!, I am </span><br/> Andrea Anikwe <br/><span style={{ color: '#1f7ed2', fontSize: 40, WebkitTextStroke: 0.5, WebkitTextStrokeColor: "black"}}> Student | Software engineer </span></h2>
       </div>
       <div className='main-links'>
         <button id='main-button'>RESUME<IoMdDownload style={{fontSize: 20}} onClick={downloadResume}/></button>
