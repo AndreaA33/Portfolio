@@ -49,7 +49,7 @@ window.addEventListener('scroll', function() {
 
   return (
     <div className='navbar' id='navbar'>
-      <img src={logo} className='logo'/>
+      <img src={logo} className='logo' href={"https://andreaanikwe.netlify.app/"}/>
       <div className='nav-container'>
         <button className={isEvent == 0 ? "selected-button" :'navbar-button'} onClick={handleToHome}>Home</button>
         <button className={isEvent == 1 ? "selected-button" :'navbar-button'} onClick={handleToAboutme}>About Me</button>
