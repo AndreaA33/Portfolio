@@ -51,15 +51,15 @@ function SkillsComp() {
             </div>
             <div className='skill'>
                 <img src={htmllogo}/>
-                <p>React</p>
+                <p>HTML</p>
             </div>
             <div className='skill'>
                 <img src={csslogo}/>
-                <p>React</p>
+                <p>CSS</p>
             </div>
             <div className='skill'>
                 <img src={gitlogo}/>
-                <p>React</p>
+                <p>Git</p>
             </div>
         </div>
     </div>
