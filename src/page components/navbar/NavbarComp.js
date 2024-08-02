@@ -2,7 +2,7 @@ import React from 'react'
 import "./navbar.css"
 import "@fontsource/inter";
 import logo from "../../assets/logo.png"
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 
 function NavbarComp() {
 
@@ -49,13 +49,13 @@ window.addEventListener('scroll', function() {
 
   return (
     <div className='navbar' id='navbar'>
-      <img src={logo} className='logo' href={"https://andreaanikwe.netlify.app/"}/>
+      <a  href={"https://andreaanikwe.netlify.app/"}><img src={logo} className='logo' alt='logo'/></a>
       <div className='nav-container'>
-        <button className={isEvent == 0 ? "selected-button" :'navbar-button'} onClick={handleToHome}>Home</button>
-        <button className={isEvent == 1 ? "selected-button" :'navbar-button'} onClick={handleToAboutme}>About Me</button>
-        <button className={isEvent == 2 ? "selected-button" :'navbar-button'} onClick={handleToProjects}>Projects</button>
-        <button className={isEvent == 3 ? "selected-button" :'navbar-button'} onClick={handleToSkills}>Skills</button>
-        <button className={isEvent == 4 ? "selected-button" :'navbar-button'} onClick={handleToContactMe}>Contact Me</button>
+        <button className={isEvent === 0 ? "selected-button" :'navbar-button'} onClick={handleToHome}>Home</button>
+        <button className={isEvent === 1 ? "selected-button" :'navbar-button'} onClick={handleToAboutme}>About Me</button>
+        <button className={isEvent === 2 ? "selected-button" :'navbar-button'} onClick={handleToProjects}>Projects</button>
+        <button className={isEvent === 3 ? "selected-button" :'navbar-button'} onClick={handleToSkills}>Skills</button>
+        <button className={isEvent === 4 ? "selected-button" :'navbar-button'} onClick={handleToContactMe}>Contact Me</button>
       </div>
     </div>
   )

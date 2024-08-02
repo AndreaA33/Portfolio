@@ -30,35 +30,35 @@ function SkillsComp() {
         <h2 id='heading' className='skills-heading'>Skills</h2>
         <div className='skills-main'>
             <div className='skill'>
-                <img src={pythonlogo}/>
+                <img src={pythonlogo} alt='pythonlogo'/>
                 <p>Python</p>
             </div>
             <div className='skill'>
-                <img src={javalogo}/>
+                <img src={javalogo} alt='javalogo'/>
                 <p>Java</p>
             </div>
             <div className='skill'>
-                <img src={jslogo}/>
+                <img src={jslogo} alt='jslogo'/>
                 <p>JavaScript</p>
             </div>
             <div className='skill'>
-                <img src={sqllogo}/>
+                <img src={sqllogo} alt='sqllogo'/>
                 <p>SQL</p>
             </div>
             <div className='skill'>
-                <img src={reactlogo}/>
+                <img src={reactlogo} alt='reactlogo'/>
                 <p>React</p>
             </div>
             <div className='skill'>
-                <img src={htmllogo}/>
+                <img src={htmllogo} alt='htmllogo'/>
                 <p>HTML</p>
             </div>
             <div className='skill'>
-                <img src={csslogo}/>
+                <img src={csslogo} alt='csslogo'/>
                 <p>CSS</p>
             </div>
             <div className='skill'>
-                <img src={gitlogo}/>
+                <img src={gitlogo} alt='gitlogo'/>
                 <p>Git</p>
             </div>
         </div>

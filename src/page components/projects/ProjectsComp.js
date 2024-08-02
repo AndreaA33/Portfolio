@@ -27,7 +27,7 @@ function ProjectsComp() {
       <div className='project-main'>
         <a href='https://github.com/AndreaA33/Guitar-tuning-software'>
         <div className='project1'>
-          <img className="imgleft" src={project1img}/>
+          <img className="imgleft" src={project1img} alt='projectimage'/>
           <div className='project-desc'>
             <h3>Guitar tuning project</h3>
             <p>A guitar tuner built using python and several libraries such as blablabla</p>
@@ -47,11 +47,11 @@ function ProjectsComp() {
               <p>Expo Go</p>
             </div>
           </div>
-          <img className="imgright" src={project2img}/>
+          <img className="imgright" src={project2img} alt='projectimage'/>
         </div></a>
         <a href='https://github.com/AndreaA33/Birmingham-Motor-Hub'>
         <div className='project1'>
-        <img className="imgleft" src={project3img}/>
+          <img className="imgleft" src={project3img} alt='projectimage'/>
           <div className='project-desc'>
             <h3>Birmingham Motor Hub</h3>
             <p>A guitar tuner built using python and several libraries such as blablabla</p>
