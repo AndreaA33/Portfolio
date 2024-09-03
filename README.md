@@ -1,3 +1,3 @@
 # Portfolio
 
-you can find my portfolio here https://andreaanikwe.netlify.app/ 
+You can find my portfolio here https://andreaanikwe.netlify.app/ 
