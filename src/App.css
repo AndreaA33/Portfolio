@@ -31,7 +31,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 443vh;
+  height: 481vh;
 }
 
 
@@ -62,6 +62,10 @@ body {
 }
 
 #main-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: auto;
   padding-left: 10px;
   padding-right: 10px;
