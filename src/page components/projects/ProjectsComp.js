@@ -46,7 +46,7 @@ function ProjectsComp() {
         <a href='https://github.com/AndreaA33/Guitar-tuning-software'>
         <div className='project2'>
           <div className='project-desc' id={"desc2"}>
-            <h3>Guitar tuning project</h3>
+            <h3>Guitar tuning algorithm</h3>
             <p>The guitar tuning algorithm is designed to accurately and efficiently tune a guitar by analyzing the frequency of the sound produced by each string and making real-time adjustments to match the desired standard or custom tuning</p>
             <div className='project-language'>
               <p>Python</p>
