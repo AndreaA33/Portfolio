@@ -103,7 +103,7 @@ body {
 }
 
 @media (min-width: 390px) and (max-width: 844px) {
-  .app {
+  body {
     overflow-x: hidden;
   }
 }
