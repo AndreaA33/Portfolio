@@ -101,3 +101,9 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 390px) and (max-width: 844px) {
+  .app {
+    overflow-x: hidden;
+  }
+}
