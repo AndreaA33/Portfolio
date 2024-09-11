@@ -27,3 +27,47 @@
     position: relative;
     right: 31%
 }
+
+@media (min-width: 390px) and (max-width: 844px) {
+
+    .aboutme-main {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        padding: 20px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .aboutme-main-p {
+        width: 90%;
+        margin: 20px 0;
+        font-size: 15px;
+        padding: 0;
+        text-align: start;
+        line-height: 1.6;
+    }
+
+    .aboutme-pfp {
+        width: 50%;
+        height: auto;
+        max-width: 300px;
+        margin: 20px 0;
+        border-radius: 50%;
+    }
+
+    .aboutme-heading {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 25px;
+    }
+
+    .aboutme a {
+        display: block;
+        text-align: center; 
+        margin: 10px auto; 
+    }
+}

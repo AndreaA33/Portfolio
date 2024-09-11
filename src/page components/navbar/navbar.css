@@ -66,3 +66,57 @@ body {
 .logo:hover{
     cursor: pointer;
 }
+
+
+@media (min-width: 390px) and (max-width: 844px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        height: auto;
+        width: 80%;
+        top: 0;
+        z-index: 10;
+    }
+
+    .nav-container {
+       visibility: hidden;
+    }
+
+    .navbar-button, .selected-button {
+        background: none;
+        color: white;
+        border: none;
+        font-size: 11px;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin: 5px;
+        width: auto;
+    }
+
+    .navbar-button:hover, .selected-button:hover {
+        transition: 100ms;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .selected-button {
+        background-color: rgba(182, 182, 182, 0.5);
+        transition: 0.3s ease-in;
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    .logo:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+    }
+}

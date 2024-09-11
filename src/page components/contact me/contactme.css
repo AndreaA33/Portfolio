@@ -76,3 +76,28 @@
 .submit-input:hover{
     cursor: pointer;
 }
+
+@media (min-width: 390px) and (max-width: 844px) {
+    
+    .contactme-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 300px;
+        width: 60%;
+        padding-top: 2%;
+    }
+
+    .contactme-main p{
+        font-size: 12px;
+    }
+}

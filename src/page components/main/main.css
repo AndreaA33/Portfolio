@@ -16,11 +16,6 @@
 }
 
 
-.main-dots{
-    height: 40px;
-    width: 10px;
-}
-
 .main-link{
     height: 30px;
     color: white;
@@ -150,4 +145,122 @@ body::after {
 		opacity: 0;
 		top: 20px;
 	}
+}
+
+
+@media (min-width: 390px) and (max-width: 844px) {
+  .main {
+      color: white;
+      padding-bottom: 5%;
+  }
+
+  .main-links {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      left: 0;
+      align-items: flex-start;
+      row-gap: 5px;
+      width: 100%;
+      gap: 10px;
+      margin-top: 20px;
+      padding-left: 20px;
+  }
+
+  .main-link {
+      height: 30px;
+      color: white;
+      font-size: 16px;
+  }
+
+  .main-link:hover {
+      cursor: pointer;
+  }
+
+  .main-heading {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 20%;
+      left: 5%;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 90%;
+      text-align: start;
+      padding-bottom: 30%;
+  }
+
+  body::before,
+  body::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      opacity: 0.8;
+  }
+
+  body::before {
+      background: var(--third-glow);
+      border-radius: 50%;
+      width: 60vw;
+      height: 60vw;
+      margin-left: -100px;
+      filter: blur(90px);
+      top: calc(50vh - 60vw / 2);
+      left: calc(50vw);
+      animation: animateBefore 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  }
+
+  body::after {
+      background: var(--secondary-glow);
+      border-radius: 50%;
+      width: 400px;
+      height: 500px;
+      filter: blur(90px);
+      top: calc(50vh - 60vw / 2);
+      left: calc(50vw - 60vw / 2);
+      animation: animateAfter 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  }
+
+  .mouse {
+      width: 20px;
+      height: 50px;
+      border: 3px solid #ffffff;
+      border-radius: 60px;
+      left: 45%;
+      top: 15%;
+      position: relative;
+  }
+
+  .mouse::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ffffff;
+      border-radius: 50%;
+      opacity: 1;
+      animation: wheel 2s infinite;
+      -webkit-animation: wheel 2s infinite;
+  }
+
+  .mouse:hover {
+      cursor: pointer;
+  }
+
+  @keyframes wheel {
+      to {
+          opacity: 0;
+          top: 40px;
+      }
+  }
+
+  @-webkit-keyframes wheel {
+      to {
+          opacity: 0;
+          top: 20px;
+      }
+  }
 }

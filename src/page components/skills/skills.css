@@ -40,3 +40,30 @@
     position: relative;
     width: 50px;
 }
+
+@media (min-width: 390px) and (max-width: 844px) {
+
+    .skills-heading{
+        position: relative;
+        top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .skill{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgb(39, 39, 39);   
+        width: fit-content;
+        color: white ;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .skill img{
+        position: relative;
+        width: 30px;
+    }
+}
