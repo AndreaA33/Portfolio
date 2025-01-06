@@ -8,6 +8,7 @@ import reactlogo from "../../assets/reactlogo.svg"
 import htmllogo from "../../assets/htmlogo.svg"
 import csslogo from "../../assets/csslogo.svg"
 import gitlogo from "../../assets/gitlogo.svg"
+import awslogo from "../../assets/general-aws-cloud.svg"
 import { useEffect } from 'react'
 
 function SkillsComp() {
@@ -29,6 +30,10 @@ function SkillsComp() {
     <div className='skills' id="skills">
         <h2 id='heading' className='skills-heading'>Skills</h2>
         <div className='skills-main'>
+            <div className='skill'>
+                <img src={awslogo} alt='pythonlogo'/>
+                <p>AWS</p>
+            </div>
             <div className='skill'>
                 <img src={pythonlogo} alt='pythonlogo'/>
                 <p>Python</p>

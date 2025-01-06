@@ -43,7 +43,7 @@ function ContactMeComp() {
 
 
   return (
-    <div className='contactme' id="contactme">
+    <div className='contactme' id="contact">
       <h1 id='heading' className='contactme-heading'>Contact me</h1>
       <div className='contactme-main'>
         <p>Please contact me directly through <a href='mailto:Andreaanikwe@gmail.com'><span>Andreaanikwe@gmail.com</span></a> or through this form:</p>

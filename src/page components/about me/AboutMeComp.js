@@ -19,7 +19,7 @@ function AboutMeComp() {
   },[])
 
   return (
-    <div className='aboutme' id='aboutme'>
+    <div className='aboutme' id='about'>
       <h2 className='aboutme-heading' id='heading'>About me</h2>
       <div className='aboutme-main'>
         <p className='aboutme-main-p'>Hi my name is <span style={{ color: '#1f7ed2' }}> Andrea</span>. An enthusiastic and accomplished individual currently studying a BSc in <span style={{ color: '#1f7ed2' }}> Computer Science</span> at the University of Leicester.

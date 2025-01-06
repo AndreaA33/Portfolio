@@ -118,6 +118,74 @@
     text-align: center;
 }
 
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+    background-color: rgba(46, 46, 46, 0.76);
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    max-height: 80vh; /* Set a max height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.popup-desc {
+    height: auto; 
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.popup-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.popup-close {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    background: #0056b3;
+}
+  
+  .project-language p {
+    background-color: rgba(20, 20, 20, 0.833);
+    border-radius: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+
 @media (min-width: 390px) and (max-width: 844px) {
 
     .project-heading{
