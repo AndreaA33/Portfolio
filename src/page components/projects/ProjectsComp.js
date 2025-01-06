@@ -38,7 +38,7 @@ function ProjectsComp() {
         <div className='project2' onClick={openPopup}>
           <div className='project-desc' id="desc2">
             <h3>Distributed Private Cloud hosting a Collaborative Whiteboard App</h3>
-            <p>Scalable AWS-hosted solution with Docker, Redis, and DynamoDB, featuring auto-scaling, IaC, and optimized performance</p>
+            <p>A robust cloud-based solution leveraging AWS to create a reliable and scalable collaborative whiteboard application.</p>
             <div className='project-language'>
               <p>AWS</p>
               <p>Docker</p>
